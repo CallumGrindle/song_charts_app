@@ -1,9 +1,21 @@
-import React, {Component} from 'react'
+import React from 'react'
 import Song from './Song.js'
 
 const SongsList = (props) => {
+  const songNodes = props.songs.map((song, index) => {
+    return (
+      <Song key={ song.id.attributes["im:id"] }
+
+      >
+      { song.title.label }
+      </Song>
+    )
+  })
+
   return (
-    <Song />
+    <ol>
+      {songNodes}
+    </ol>
   )
 }
 
