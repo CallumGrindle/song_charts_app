@@ -1,11 +1,9 @@
 import React, {Component} from 'react'
 
-class Song extends Component {
-  render() {
-    return (
-      <h1>Song</h1>
-    )
-  }
-}
+const Song = (props) => {
+  return (
+
+  )
+};
 
 export default Song;
